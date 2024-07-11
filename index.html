@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Giratoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wheel-section">
+            <div id="wheel">
+                <canvas id="canvas" width="600" height="600"></canvas>
+            </div>
+            <button id="spin">Girar Ruleta</button>
+            <div id="result"></div>
+        </div>
+        <div class="legend-section">
+            <div class="legend">
+                <div class="legend-item" style="background-color: #7FFF00;">
+                    <h3> PROPÓSITO (VERDE) </h3>
+                    <ul id="bigWordsList"></ul>
+                </div>
+                <div class="legend-item" style="background-color: #FFD700;">
+                    <h3> LÍNEA DE INVESTIGACIÓN (AMARRILLO) </h3>
+                    <ul id="mediumWordsList"></ul>
+                </div>
+                <div class="legend-item" style="background-color: #FFA500;">
+                    <h3> POBLACIÓN (ANARANJADO) </h3>
+                    <ul id="smallWordsList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

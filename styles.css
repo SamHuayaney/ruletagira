@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Añadido: Permite envolver elementos si no caben en una sola línea */
+}
+
+.wheel-section {
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.division {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.division:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.legend-section {
+    width: 100%; /* Modificado: Ocupa todo el ancho disponible */
+    display: flex; /* Añadido: Hace que los elementos hijos estén en línea */
+    justify-content: space-around; /* Añadido: Distribuye los elementos equitativamente */
+    margin-top: 20px; /* Añadido: Espacio arriba */
+}
+
+.legend {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex; /* Añadido: Hace que los elementos hijos estén en línea */
+    flex-wrap: wrap; /* Añadido: Permite envolver elementos si no caben en una sola línea */
+}
+
+.legend-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    flex: 1 1 250px; /* Añadido: Distribuye el espacio equitativamente */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Añadido: Elimina el margen predeterminado de las listas */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #ffffff; /* Aclarar el fondo al pasar el puntero */
+    color: #000; /* Cambiar el color del texto a negro */
+}
